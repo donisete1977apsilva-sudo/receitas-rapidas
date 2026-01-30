@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita Rápida | Todas as Receitas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #1f2933;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    header p { opacity: 0.9; }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .paywall {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .paywall h2 { margin-top: 0; }
+    .price {
+      font-size: 2em;
+      color: #eab308;
+      font-weight: bold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 24px;
+      background: #eab308;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .recipes {
+      display: none;
+      margin-top: 40px;
+    }
+
+    .recipe {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    input {
+      padding: 12px;
+      width: 100%;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Receita Rápida</h1>
+  <p>Todas as receitas em um só lugar 🍰🍝🍦</p>
+</header>
+
+<div class="container">
+
+  <div class="paywall" id="paywall">
+    <h2>🔒 Conteúdo Exclusivo</h2>
+    <p>Tenha acesso a <strong>todas as receitas possíveis</strong>: bolos, lasanhas, sorvetes, doces, salgados e muito mais.</p>
+    <p class="price">R$ 10,00</p>
+    <p>Pagamento único • Acesso completo</p>
+    <a class="btn" href="https://wa.me/5500000000000" target="_blank">Pagar via WhatsApp</a>
+    <p style="margin-top:15px; font-size:0.9em;">Após o pagamento, o acesso é liberado manualmente.</p>
+  </div>
+
+  <div class="recipes" id="recipes">
+    <input type="text" placeholder="🔍 Pesquise qualquer receita (bolo, lasanha, sorvete...)" />
+
+    <div class="recipe">
+      <h3>🍰 Bolo Simples</h3>
+      <p><strong>Ingredientes:</strong> ovos, açúcar, farinha, leite, fermento.</p>
+      <p><strong>Modo de preparo:</strong> Misture tudo, asse por 40 minutos a 180°C.</p>
+    </div>
+
+    <div class="recipe">
+      <h3>🍝 Lasanha Tradicional</h3>
+      <p><strong>Ingredientes:</strong> massa de lasanha, carne moída, queijo, molho.</p>
+      <p><strong>Modo de preparo:</strong> Monte camadas e asse por 30 minutos.</p>
+    </div>
+
+    <div class="recipe">
+      <h3>🍦 Sorvete Caseiro</h3>
+      <p><strong>Ingredientes:</strong> leite condensado, creme de leite, essência.</p>
+      <p><strong>Modo de preparo:</strong> Misture e leve ao freezer por 4 horas.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 - Receita Rápida | Plataforma de Receitas
+</footer>
+
+<script>
+  // SIMULAÇÃO DE ACESSO LIBERADO (para testes)
+  // depois do pagamento real, você pode liberar manualmente
+  const acessoLiberado = false; // mude para true para liberar
+
+  if (acessoLiberado) {
+    document.getElementById('paywall').style.display = 'none';
+    document.getElementById('recipes').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
